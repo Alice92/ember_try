@@ -1,4 +1,6 @@
 EmberTry.Store = DS.Store.extend
-  revision: 4
-  adapter: DS.RESTAdapter.create()
+  revision: 11,
+  adapter: DS.RESTAdapter.create({
+    namespace: 'api/v1'
+  })
 
